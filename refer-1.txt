@@ -1,0 +1,16 @@
+how SDLC used in azure devops.
+checkblade package
+artifacts-create 
+azure boards- to create tasks
+azure repo- storage,source code GIT used in this
+CI/CD
+software package 
+
+
+$location = '[CentralIndia]' $rgName = 'az104-11-rg0' New-AzResourceGroup -Name $rgName -Location $location
+
+New-AzureRmResourceGroup -Name az104-11-rg0 -Location "CentralIndia"
+
+New-AzResourceGroupDeployment ` -ResourceGroupName az104-11-rg0 ` -TemplateFile $HOME/Lakshmi/az104-11-vm-template.json ` -TemplateParameterFile $HOME/Lakshmi/az104-11-vm-parameters.json ` -AsJob
+
+Register-AzResourceProvider -az104-11-rg0 Microsoft.Insights
